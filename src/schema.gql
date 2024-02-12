@@ -1,0 +1,10 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  """mi primer hola mundo"""
+  helloWorld: String!
+  randomNumber: Float!
+  randomNumber0_10(to: Int): Int!
+}
