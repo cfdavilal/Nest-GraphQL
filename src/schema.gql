@@ -2,9 +2,26 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Todo {
+  id: Int!
+  description: String!
+  done: Boolean!
+}
+
 type Query {
   """mi primer hola mundo"""
   helloWorld: String!
   randomNumber: Float!
   randomNumber0_10(to: Int): Int!
+  todos: [Todo!]!
+  todo(id: Float!): Todo!
+}
+
+type Mutation {
+  createTodo(createTodoInput: CreateTodoInput!): Todo!
+}
+
+input CreateTodoInput {
+  """The description of the todo"""
+  description: String!
 }

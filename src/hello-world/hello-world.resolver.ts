@@ -16,5 +16,4 @@ export class HelloWorldResolver {
     getRandomFromZeroTo(@Args('to', { type: () => Int , nullable: true}) to: number = 6): number {
         return Math.floor(Math.random() * (to + 1))
     }
-
 }
